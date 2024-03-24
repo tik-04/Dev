@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Poor+Story&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo i {
+    margin-left: 5px;
+}
+.list {
+    text-decoration: none;
+}
+
+.in-list {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.in-list:hover {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: .3s;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+
+    position: relative;
+    isolation: isolate;
+    
+    
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: pink;
+    opacity: .6;
+
+    background-image: url(https://www.chemicals.co.uk/wp-content/uploads/2021/09/atoms-and-molecules-scaled.jpg); 
+    background-repeat: none;
+    background-size: cover;
+}
+
+.banner .all-text {
+    border: 7px solid black;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+
+}
+
+
+.banner .all-text .Title {
+    text-align: center;
+    font-size: 20px;    
+
+}
+
+
+.About {
+    justify-content: center;
+    align-items: center;    
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Temperature {
+    padding: 16px;
+    height: 100%;
+    
+}
+
+.Temperature p{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.Temperature .Title {
+    display: flex;
+}
+
+
+
+.O {
+    margin-top: 20px;
+}
+
+.O .Title i{
+    align-items: center;
+    margin-left: 5px;
+}
+
+.Fahrenheit {
+    margin-top: 10px;
+}
+
+.Calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 10px;
+}
+
+.Cal-Tool {
+    padding: 16px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+input[type=number] {
+	width: 5em;
+	padding: 0.5em;
+	border: .2em solid #000000;
+	border-radius: 1em;
+	text-align: center;
+	color: #000000;
+	appearance: textfield;
+	margin: 0;
+	&::-webkit-inner-spin-button {
+		opacity: 1;
+		background: rgb(0, 0, 0);
+	}
+}
+
+input[type=button] {
+	appearance: none;
+	border: .2em solid #000000;
+	background: hsl(0 0 0/0);
+	padding: .85em 1.5em;
+	color: #000000;
+	border-radius: 2em;
+	transition: 1s;
+	&:hover, &:focus, &:active {
+		background: #000000;
+		color: #fff;
+	}
+}
+
+.input {
+    margin-top: 15px;
+}
+
+.output {
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+
+    .banner {
+        height: 60vh;
+    }
+
+    .all-text .Title h1 {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 910px) {
+    .all-text {
+        width: 75%; 
+        border: 3.5px solid black;
+    }
+}
